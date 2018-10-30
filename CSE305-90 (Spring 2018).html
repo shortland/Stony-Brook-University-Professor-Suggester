@@ -1,0 +1,650 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+
+
+<head>
+    
+    <title>CSE305-90 | Classie Evaluation Explorer</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/ee71ef3e-a7f1-47dd-8ae1-4ae6bec02b30.css" />
+    <link rel="apple-touch-icon" href="../../images/favicons/apple-touch-icon-144x144-precomposed.png">
+    <link rel=\'shortcut icon\' href=\'/Content/themes/classie_evals/stylesheets/images/favicon.ico\' />
+    <!--[if IE]>
+    <link rel="shortcut icon" href="/Content/themes/unity-lab/images/favicons/favicon.ico">
+    <![endif]-->
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn\'t work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+            <link rel="stylesheet" href="/content/themes/unity-lab/css/style.css" type="text/css" />
+            <script src="/content/themes/unity-lab/js/header/header.dev.js"></script>
+
+
+    <link rel="stylesheet" href="/Content/themes/site/css/style.css" type="text/css" />
+
+    
+
+
+
+    
+    
+
+
+
+    <script>
+    (function (i, s, o, g, r, a, m) {
+        i[\'GoogleAnalyticsObject\'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, \'script\', \'//www.google-analytics.com/analytics.js\', \'ga\');
+
+    ga(\'create\', \'UA-41506846-3\', \'auto\');
+    ga(\'send\', \'pageview\');
+
+    </script>
+
+</head>
+
+
+
+<body>
+
+    <div class="page" id="page">
+        <!-- Begin .header -->
+        <header>
+            <div class="logo-container">
+                <div class="container">
+
+                    <div class="logo-wrapper clearfix">
+                        <div class="logo">
+                            <a href="//www.stonybrook.edu/"><img src="/Content/themes/unity-lab/images/logos/stony-brook-university-logo.jpg" class="logo" alt="Stony Brook University Logo"></a>
+                        </div>
+                        <h1 class="site-name"><a href="/">Classie Evaluation Explorer</a></h1>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        
+        <nav class="unity-navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="unity-navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <div class="unity-navbar-toggle--button-hamburger">
+                            <span class="unity-nav-icon-bar"></span>
+                            <span class="unity-nav-icon-bar"></span>
+                            <span class="unity-nav-icon-bar"></span>
+                        </div>
+                        <div class="unity-navbar-toggle--button-text">
+                            Menu
+                        </div>
+                    </button>
+                </div>
+                <div id="navbar" class="unity-navbar-collapse collapse">
+                    <ul class="unity-navbar-nav">
+                        <li class="first"><a href="/">Sections</a></li>
+                        <li class=""><a href="/Instructor">Instructors</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+
+
+        
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="/Content/themes/site/js/jquery.easyPaginate.js"></script>
+<script type="text/javascript">
+
+    // Load the Visualization API and the corechart package.
+    google.charts.load(\'current\', { \'packages\': [\'corechart\'] });
+</script>
+
+
+
+
+
+
+<section class="bg-black basic-hero overlay-none cozy">
+    <div class="container">
+        <div class="hero-content">
+            <div class="row">
+                <div class="col-sx-12 col-sm-12 col-md-12">
+                    <h1 class="centered animated fadeInDown white">
+                        CSE305-90
+
+                        Spring 2018
+
+                        LEC
+                    </h1>
+
+                    <h2>PRINCIPLES OF DATABASE SYSTEMS</h2>
+                    <h3>Arthur Lee</h3>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<section class="cozy">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <h3 class="bold-introduction-heading">Grade Distribution</h3>
+
+
+            </div>
+        </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <h4 class="section-heading">Students In This Class Received:</h4>
+                    <strong>Total:</strong>
+
+                    9
+                    <div class="width-80-percent" style="margin: 0px auto; height: 400px" id="gradeDistGraph"></div>
+
+                </div>
+            </div>
+    </div>
+</section>
+
+
+
+<script type="text/javascript">
+
+                
+                    google.charts.setOnLoadCallback(drawChartGradeDistAF);
+                    $(window).on(\'resize\', drawChartGradeDistAF);
+                
+
+
+
+
+
+    function drawChartGradeDistAFPNC() {
+
+
+
+        var data = google.visualization.arrayToDataTable([
+
+            [\'\', \'Grade\', { role: \'style\' }, { role: \'tooltip\' }],
+
+
+            [\'A\', 2, \'#990000\', 2 + \' Students\\n\' + 22 + \'%\\n\'],
+            [\'A-\', 1, \'#990000\', 1 + \' Students\\n\' + 11 + \'%\\n\'],
+            [\'B+\', 3, \'#990000\', 3 + \' Students\\n\' + 33 + \'%\\n\'],
+            [\'B\', 3, \'#990000\', 3 + \' Students\\n\' + 33 + \'%\\n\'],
+            [\'B-\', 0, \'#990000\', 0 + \' Students\\n\' + 0 + \'%\\n\'],
+            [\'C+\', 0, \'#990000\', 0 + \' Students\\n\' + 0 + \'%\\n\'],
+            [\'C\', 0, \'#990000\', 0 + \' Students\\n\' + 0 + \'%\\n\'],
+            [\'C-\', 0, \'#990000\', 0 + \' Students\\n\' + 0 + \'%\\n\'],
+            [\'D+\', 0, \'#990000\', 0 + \' Students\\n\' + 0 + \'%\\n\'],
+            [\'D\', 0, \'#990000\', 0 + \' Students\\n\' + 0 + \'%\\n\'],
+            [\'F\', 0, \'#990000\', 0 + \' Students\\n\' + 0 + \'%\\n\'],
+            [\'P\', 0, \'#990000\', 0 + \' Students\\n\' + 0 + \'%\\n\'],
+            [\'NC\', 0, \'#990000\', 0 + \' Students\\n\' + 0 + \'%\\n\'],
+            [\'I\', 0, \'#990000\', 0 + \' Students\\n\' + 0 + \'%\\n\'],
+            [\'W\', 0, \'#990000\', 0 + \' Students\\n\' + 0 + \'%\\n\']
+        ]);
+
+
+        var options = {
+            legend: { position: \'none\' },
+            hAxis: { title: \'Grades\' },
+            vAxis: { title: \'Number of Students\' },
+            backgroundColor: { fill: \'transparent\' },
+            width: \'100%\',
+            chartArea: { left: \'50\', width: \'100%\' }
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById("gradeDistGraph"));
+        chart.draw(data, options);
+
+    }
+
+    function drawChartGradeDistAF() {
+
+
+
+        var data = google.visualization.arrayToDataTable([
+
+
+
+            [\'\', \'Grade\', { role: \'style\' }, { role: \'tooltip\' }],
+
+
+            [\'A\', 2, \'#990000\', 2 + \' Students\\n\' + 22 + \'%\\n\'],
+            [\'A-\', 1, \'#990000\', 1 + \' Students\\n\' + 11 + \'%\\n\'],
+            [\'B+\', 3, \'#990000\', 3 + \' Students\\n\' + 33 + \'%\\n\'],
+            [\'B\', 3, \'#990000\', 3 + \' Students\\n\' + 33 + \'%\\n\'],
+            [\'B-\', 0, \'#990000\', 0 + \' Students\\n\' + 0 + \'%\\n\'],
+            [\'C+\', 0, \'#990000\', 0 + \' Students\\n\' + 0 + \'%\\n\'],
+            [\'C\', 0, \'#990000\', 0 + \' Students\\n\' + 0 + \'%\\n\'],
+            [\'C-\', 0, \'#990000\', 0 + \' Students\\n\' + 0 + \'%\\n\'],
+            [\'D+\', 0, \'#990000\', 0 + \' Students\\n\' + 0 + \'%\\n\'],
+            [\'D\', 0, \'#990000\', 0 + \' Students\\n\' + 0 + \'%\\n\'],
+            [\'F\', 0, \'#990000\', 0 + \' Students\\n\' + 0 + \'%\\n\'],
+            [\'I\', 0, \'#990000\', 0 + \' Students\\n\' + 0 + \'%\\n\'],
+            [\'W\', 0, \'#990000\', 0 + \' Students\\n\' + 0 + \'%\\n\']
+        ]);
+
+
+        var options = {
+            legend: { position: \'none\' },
+            hAxis: { title: \'Grades\' },
+            vAxis: { title: \'Number of Students\' },
+            backgroundColor: { fill: \'transparent\' },
+            width: \'100%\',
+            chartArea: { left: \'50\', width: \'100%\' }
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById("gradeDistGraph"));
+        chart.draw(data, options);
+
+    }
+
+    function drawChartGradeDistSU() {
+
+
+
+        var data = google.visualization.arrayToDataTable([
+
+            [\'\', \'Grade\', { role: \'style\' }, { role: \'tooltip\' }],
+
+
+            [\'S\', 0, \'#990000\', 0 + \' Students\\n\' + 0 + \'%\\n\'],
+            [\'U\', 0, \'#990000\', 0 + \' Students\\n\' + 0 + \'%\\n\'],
+            [\'P\', 0, \'#990000\', 0 + \' Students\\n\' + 0 + \'%\\n\'],
+            [\'NC\', 0, \'#990000\', 0 + \' Students\\n\' + 0 + \'%\\n\'],
+            [\'I\', 0, \'#990000\', 0 + \' Students\\n\' + 0 + \'%\\n\'],
+            [\'W\', 0, \'#990000\', 0 + \' Students\\n\' + 0 + \'%\\n\']
+
+        ]);
+
+
+        var options = {
+            legend: { position: \'none\' },
+            hAxis: { title: \'Grades\' },
+            vAxis: { title: \'Number of Students\' },
+            backgroundColor: { fill: \'transparent\' },
+            width: \'100%\',
+            chartArea: { left: \'50\', width: \'100%\' }
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById("gradeDistGraph"));
+        chart.draw(data, options);
+
+    }
+
+
+
+</script>
+}
+
+
+<section class="cozy">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3 class="bold-introduction-heading">Evaluation Scores</h3>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4 class="section-heading">Overall, Students Give This Course a Grade of (A-F):</h4>
+                    <strong>Mean:</strong>
+
+                    A
+                    <strong>Standard Deviation:</strong>
+                    0.00
+                    <strong>Responses</strong>
+                    3
+                    <br />
+                    <div class="width-80-percent" style="margin: 0px auto; height:400px" id="overallgraph"></div>
+                    <br />
+
+                </div>
+            </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-6">
+                                <h4 class="section-heading">Hours Spent Weekly Studying Outside Class</h4>
+                                <strong>Mean:</strong>
+                                3.00
+                                <strong>Standard Deviation:</strong>
+                                0.82
+                                <strong>Responses</strong>
+                                3
+                                <br />
+                                <div class="google-graph card" id="StudyingGraph"></div>
+                            </div>
+
+                            <div class="col-sm-12 col-lg-6">
+
+                                <h4 class="section-heading">Average Student Attendance In This Class</h4>
+
+
+                                <strong>Mean:</strong>
+                                5.00
+                                <strong>StandardDeviation:</strong>
+                                0.00
+                                <strong>Responses</strong>
+                                3
+                                <br />
+                                <div class="margin-20-0" id="AttendanceGraph"></div>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+
+
+    google.charts.setOnLoadCallback(drawChartOverall);
+    $(window).on(\'resize\', drawChartOverall);
+
+    google.charts.setOnLoadCallback(drawChartHours);
+    $(window).on(\'resize\', drawChartHours);
+
+    google.charts.setOnLoadCallback(drawChartAttendance);
+    $(window).on(\'resize\', drawChartAttendance);
+
+
+
+
+
+
+
+
+    function drawChartOverall() {
+        var data = google.visualization.arrayToDataTable([
+            [\'\', \'Overall Grade\', { role: \'style\' }, { role: \'tooltip\' }],
+            [\'A\', 3, \'#990000\', 3 + \' Responses\\n\' + 100 + \'% of total responses\'],
+            [\'B\', 0, \'#990000\', 0 + \' Responses\\n\' + 0 + \'% of total responses\'],
+            [\'C\', 0, \'#990000\', 0 + \' Responses\\n\' + 0 + \'% of total responses\'],
+            [\'D\', 0, \'#990000\', 0 + \' Responses\\n\' + 0 + \'% of total responses\'],
+            [\'F\', 0, \'#990000\', 0 + \' Responses\\n\' + 0 + \'% of total responses\']
+        ]);
+
+        var options = {
+            legend: { position: \'none\' },
+            hAxis: { title: \'Overall Grade\' },
+            vAxis: { title: \'Responses\' },
+            backgroundColor: { fill: \'transparent\' },
+            width: \'100%\',
+            chartArea: { left: \'50\', width: \'100%\' }
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById("overallgraph"));
+        chart.draw(data, options);
+    }
+
+
+
+
+    function drawChartHours() {
+
+        var data = google.visualization.arrayToDataTable([
+            [\'\', \'Studying Hours\', { role: \'style\' }, { role: \'tooltip\' }],
+            [\'0-3\', 0, \'#990000\', 0 + \' Responses\\n\' + 0 + \'% of total responses\'],
+            [\'4-6\', 1, \'#990000\', 1 + \' Responses\\n\' + 33 + \'% of total responses\'],
+            [\'7-9\', 1, \'#990000\', 1 + \' Responses\\n\' + 33 + \'% of total responses\'],
+            [\'10+\', 1, \'#990000\', 1 + \' Responses\\n\' + 33 + \'% of total responses\']
+        ]);
+
+        var options = {
+            legend: { position: \'none\' },
+            hAxis: { title: \'Hours Studying Per Week\' },
+            vAxis: { title: \'Responses\' },
+
+            backgroundColor: { fill: \'transparent\' }
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById("StudyingGraph"));
+        chart.draw(data, options);
+    }
+
+
+
+
+
+    function drawChartAttendance() {
+        var data = google.visualization.arrayToDataTable([
+            [\'\', \'Attendance\', { role: \'style\' }, { role: \'tooltip\' }],
+            [\'Always\', 3, \'#990000\', 3 + \' Responses\\n\' + 100 + \'% of total responses\'],
+            [\'Most\', 0, \'#990000\', 0 + \' Responses\\n\' + 0 + \'% of total responses\'],
+            [\'Half\', 0, \'#990000\', 0 + \' Responses\\n\' + 0 + \'% of total responses\'],
+            [\'Infrequently\', 0, \'#990000\', 0 + \' Responses\\n\' + 0 + \'% of total responses\'],
+            [\'Only Exams\', 0, \'#990000\', 0 + \' Responses\\n\' + 0 + \'% of total responses\']
+        ]);
+
+        var options = {
+            legend: { position: \'none\' },
+            hAxis: { title: \'Attendance\' },
+            vAxis: { title: \'Responses\' },
+            backgroundColor: { fill: \'transparent\' }
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById("AttendanceGraph"));
+        chart.draw(data, options);
+    }
+
+                        </script>
+
+    </div>
+</section>
+
+<section class="cozy">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <h3 class="bold-introduction-heading">Student Comments</h3>
+
+
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    <section class="cozy">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-12"><h3 class="bold-introduction-heading">Instructors</h3></div>
+
+            </div>
+
+
+
+                <div class="row">
+                    <div class="col-sm-12">
+
+
+
+                        <h4>Arthur Lee <small> <a style="margin-left: 20px; font-size: 80%; text-decoration: none;" class="arrow-link" href="/Instructor/Details/arhlee">View Profile</a></small></h4>
+                    </div>
+
+
+
+                            <div class="col-sm-12" id=arhlee style="margin: 0px auto; height:400px"></div>
+                                        <script type="text/javascript">
+                                            google.charts.setOnLoadCallback(drawInstructorChart);
+
+
+
+                                            function drawInstructorChart() {
+                                                var data = google.visualization.arrayToDataTable([
+                                                    [\'\', \'The instructor was effective in teaching the subject matter\', {role: \'tooltip\'}, \'Instructor expectations of students were reasonable\', {role: \'tooltip\'}],
+                                                    [\'Strongly Agree\', 2, 2 + \' Responses\\n\' + 66 + \'% of total responses: \' + "\\nMean: " + 4.67 + "\\nStandard Deviation: " + 0.47 + "\\nTotal Responses: " + 3, 1, 1 + \' Responses\\n\' + 33 + \'% of total responses\' + "\\nMean: " + 4.33 + "\\nStandard Deviation: " + 0.47 + "\\nTotal Responses: " + 3],
+                                                    [\'Agree\', 1, 1 + \' Responses\\n\' + 33 + \'% of total responses\' + "\\nMean: " + 4.67 + "\\nStandard Deviation: " + 0.47 + "\\nTotal Responses: " + 3, 2, 2 + \' Responses\\n\' + 66 + \'% of total responses\' + "\\nMean: " + 4.33 + "\\nStandard Deviation: " + 0.47 + "\\nTotal Responses: " + 3],
+                                                    [\'Neutral\', 0, 0 + \' Responses\\n\' + 0 + \'% of total responses\' + "\\nMean: " + 4.67 + "\\nStandard Deviation: " + 0.47 + "\\nTotal Responses: " + 3, 0, 0 + \' Responses\\n\' + 0 + \'% of total responses\' + "\\nMean: " + 4.33 + "\\nStandard Deviation: " + 0.47 + "\\nTotal Responses: " + 3],
+                                                    [\'Disagree\', 0, 0 + \' Responses\\n\' + 0 + \'% of total responses\' + "\\nMean: " + 4.67 + "\\nStandard Deviation: " + 0.47 + "\\nTotal Responses: " + 3, 0, 0 + \' Responses\\n\' + 0 + \'% of total responses\' + "\\nMean: " + 4.33 + "\\nStandard Deviation: " + 0.47 + "\\nTotal Responses: " + 3],
+                                                    [\'Strongly Disagree\', 0, 0 + \' Responses\\n\' + 0 + \'% of total responses\' + "\\nMean: " + 4.67 + "\\nStandard Deviation: " + 0.47 + "\\nTotal Responses: " + 3, 0, 0 + \' Responses\\n\' + 0 + \'% of total responses\' + "\\nMean: " + 4.33 + "\\nStandard Deviation: " + 0.47 + "\\nTotal Responses: " + 3]
+                                                ]);
+
+                                                var options = {
+                                                    colors: [\'#990000\', \'#004470\'],
+                                                    backgroundColor: { fill: \'transparent\' },
+
+                                                    chartArea: {left: \'40\'}
+                                                };
+
+                                                var chart = new google.visualization.ColumnChart($(arhlee)[0]);
+                                                chart.draw(data, options);
+                                            }
+                                            $(window).on(\'resize\', drawInstructorChart);
+                                        </script>
+
+
+                </div>        </div>
+    </section>
+
+
+
+
+        <!--End role=main-->
+        <footer class="site-footer">
+            <div class="top-footer fluffy dark-footer">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-3">
+                            <div class="footer-nav">
+                                <strong>Course Catalog Tools</strong>
+                                <ul>
+                                    <li><a href="http://classie.stonybrook.edu/">Syllabi</a></li>
+                                    <li><a href="https://classie-evals.stonybrook.edu/">Evaluation Explorer</a></li>
+                                    <li><a href="https://it.stonybrook.edu/help/kb/removing-a-comment-from-an-evaluation">Comment Removal Policy </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-nav">
+                                <strong>Course Evaluations</strong>
+                                <ul>
+                                    <li><a href="https://it.stonybrook.edu/services/course-evaluations-faculty">For Faculty</a></li>
+                                    <li><a href="https://it.stonybrook.edu/services/course-evaluations-students">For Students</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-nav">
+                                <strong>Quick Links</strong>
+                                <ul>
+                                    <li><a href="http://www.stonybrook.edu/celt">CELT</a></li>
+                                    <li><a href="http://classfind.stonybrook.edu/">Class Find</a></li>
+                                    <li><a href="http://blackboard.stonybrook.edu/">Blackboard</a></li>
+                                    <li><a href="http://stonybrook.edu/solar">SOLAR</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="social-links">
+                                <h3>Connect with @SBUDoIT</h3>
+
+
+                                <a href="https://www.facebook.com/sbudoit" class="social-link social-link--facebook">
+                                    <span class="sr-only">Facebook</span>
+                                </a>
+
+                                <a href="https://twitter.com/sbudoit" class="social-link social-link--twitter">
+                                    <span class="sr-only">Twitter</span>
+                                </a>
+
+                                <a href="https://www.youtube.com/channel/UCbOzIblxmg-Ing9NSEms8Tw" class="social-link social-link--youtube">
+                                    <span class="sr-only">YouTube</span>
+                                </a>
+
+                                <a href="https://www.flickr.com/photos/101383158@N02/" class="social-link social-link--flickr">
+                                    <span class="sr-only">Flickr</span>
+                                </a>
+
+                                <a href="https://instagram.com/sbudoit" class="social-link social-link--instagram">
+                                    <span class="sr-only">Instagram</span>
+                                </a>
+
+                                <a href="https://www.yammer.com/stonybrook.edu/" class="social-link social-link--yammer">
+                                    <span class="sr-only">Yammer</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row cozy">
+                        <div class="col-sm-12">
+                            <p>
+                                Copyright © 2008-2016 Stony Brook University Division of Information Technology - All Rights Reserved<br>
+
+                                <br />
+                                Classie Evaluation Explorer - Version: 1.14.0.21
+                                <br />
+                                    Current User: ikleiman
+                                <br />
+
+                                Phone: (631) 632-9800 | <a href="https://service.stonybrook.edu">Submit Service Ticket</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+            <script src="/content/themes/unity-lab/js/footer/footer.dev.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>

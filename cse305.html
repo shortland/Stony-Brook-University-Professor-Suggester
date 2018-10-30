@@ -1,0 +1,505 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+
+
+<head>
+    
+    <title>Course Sections | Classie Evaluation Explorer</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/ee71ef3e-a7f1-47dd-8ae1-4ae6bec02b30.css" />
+    <link rel="apple-touch-icon" href="../../images/favicons/apple-touch-icon-144x144-precomposed.png">
+    <link rel='shortcut icon' href='/Content/themes/classie_evals/stylesheets/images/favicon.ico' />
+    <!--[if IE]>
+    <link rel="shortcut icon" href="/Content/themes/unity-lab/images/favicons/favicon.ico">
+    <![endif]-->
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+            <link rel="stylesheet" href="/content/themes/unity-lab/css/style.css" type="text/css" />
+            <script src="/content/themes/unity-lab/js/header/header.dev.js"></script>
+
+
+    <link rel="stylesheet" href="/Content/themes/site/css/style.css" type="text/css" />
+
+    
+
+
+
+    
+    
+
+
+
+    <script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-41506846-3', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+
+</head>
+
+
+
+<body>
+
+    <div class="page" id="page">
+        <!-- Begin .header -->
+        <header>
+            <div class="logo-container">
+                <div class="container">
+
+                    <div class="logo-wrapper clearfix">
+                        <div class="logo">
+                            <a href="//www.stonybrook.edu/"><img src="/Content/themes/unity-lab/images/logos/stony-brook-university-logo.jpg" class="logo" alt="Stony Brook University Logo"></a>
+                        </div>
+                        <h1 class="site-name"><a href="/">Classie Evaluation Explorer</a></h1>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        
+        <nav class="unity-navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="unity-navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <div class="unity-navbar-toggle--button-hamburger">
+                            <span class="unity-nav-icon-bar"></span>
+                            <span class="unity-nav-icon-bar"></span>
+                            <span class="unity-nav-icon-bar"></span>
+                        </div>
+                        <div class="unity-navbar-toggle--button-text">
+                            Menu
+                        </div>
+                    </button>
+                </div>
+                <div id="navbar" class="unity-navbar-collapse collapse">
+                    <ul class="unity-navbar-nav">
+                        <li class="first"><a href="/">Sections</a></li>
+                        <li class=""><a href="/Instructor">Instructors</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+
+
+        
+
+<div class="container">
+<div class="row cozy">
+    
+    
+<form action="/" class="form-inline" method="get">            <div class="col-sm-12 col-md-8 col-lg-6">
+                <div class="form-group" style="width:100%">
+
+                    <div class="input-group" style="width:100%">
+                        <div class="input-group-addon">Filter</div>
+                        <input id="SearchKeyword" class="form-control" name="SearchKeyword" type="text" placeholder="Section" value="">
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="form-group">
+
+
+
+
+
+
+
+
+                    <select class="form-control" id="SearchTerm" name="SearchTerm"><option selected="selected" value="ALL">All</option>
+<option value="1186">Summer 2018 (681 Sections)</option>
+<option value="1184">Spring 2018 (3360 Sections)</option>
+<option value="1181">Winter 2018 (138 Sections)</option>
+<option value="1178">Fall 2017 (3673 Sections)</option>
+<option value="1176">Summer 2017 (676 Sections)</option>
+<option value="1174">Spring 2017 (3390 Sections)</option>
+<option value="1171">Winter 2017 (126 Sections)</option>
+<option value="1168">Fall 2016 (3712 Sections)</option>
+<option value="1166">Summer 2016 (644 Sections)</option>
+<option value="1164">Spring 2016 (3385 Sections)</option>
+<option value="1161">Winter 2016 (113 Sections)</option>
+<option value="1158">Fall 2015 (3579 Sections)</option>
+<option value="1156">Summer 2015 (649 Sections)</option>
+<option value="1154">Spring 2015 (3288 Sections)</option>
+<option value="1151">Winter 2015 (95 Sections)</option>
+<option value="1146">Summer 2014 (590 Sections)</option>
+<option value="1144">Spring 2014 (3347 Sections)</option>
+<option value="100276">Summer 11927 (1 Sections)</option>
+</select>
+                      
+                                        
+                </div>
+                <button class="btn" type="submit">Go</button>
+            </div>
+</form>    
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+                            <h2>All Terms</h2>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th style="width:210px;">
+                                Section
+                            </th>
+                            <th style="width: 330px;">
+                                Course Title
+                            </th>
+                            <th>
+                                Instructors
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                            <tr>
+                                <td>
+                                    <a href="/Section/Details/CSE/305/01/LEC/1144/50765">CSE305-01 (Spring 2014)</a>
+                                </td>
+
+                                <td>
+                                    PRINCIPLES OF DATABASE SYSTEMS
+                                </td>
+                                <td>
+
+
+                                    <a href="/Instructor/Details/ssmolka">Scott Smolka</a>
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/Section/Details/CSE/305/01/LEC/1154/50926">CSE305-01 (Spring 2015)</a>
+                                </td>
+
+                                <td>
+                                    PRINCIPLES OF DATABASE SYSTEMS
+                                </td>
+                                <td>
+
+
+                                    <a href="/Instructor/Details/ssmolka">Scott Smolka</a>
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/Section/Details/CSE/305/01/LEC/1158/81796">CSE305-01 (Fall 2015)</a>
+                                </td>
+
+                                <td>
+                                    PRINCIPLES OF DATABASE SYSTEMS
+                                </td>
+                                <td>
+
+
+                                    <a href="/Instructor/Details/ssmolka">Scott Smolka</a>
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/Section/Details/CSE/305/01/LEC/1164/41619">CSE305-01 (Spring 2016)</a>
+                                </td>
+
+                                <td>
+                                    PRINCIPLES OF DATABASE SYSTEMS
+                                </td>
+                                <td>
+
+
+                                    <a href="/Instructor/Details/atghosh">Atanu Ghosh</a>, <a href="/Instructor/Details/ssmolka">Scott Smolka</a>
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/Section/Details/CSE/305/01/LEC/1168/81749">CSE305-01 (Fall 2016)</a>
+                                </td>
+
+                                <td>
+                                    PRINCIPLES OF DATABASE SYSTEMS
+                                </td>
+                                <td>
+
+
+                                    <a href="/Instructor/Details/pfodor">Paul Fodor</a>
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/Section/Details/CSE/305/01/LEC/1174/41582">CSE305-01 (Spring 2017)</a>
+                                </td>
+
+                                <td>
+                                    PRINCIPLES OF DATABASE SYSTEMS
+                                </td>
+                                <td>
+
+
+                                    <a href="/Instructor/Details/ssmolka">Scott Smolka</a>
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/Section/Details/CSE/305/01/LEC/1174/70996">CSE305-01 (Spring 2017)</a>
+                                </td>
+
+                                <td>
+                                    PRINCIPLES OF DATABASE SYSTEMS
+                                </td>
+                                <td>
+
+
+                                    <a href="/Instructor/Details/saellee">Sael Lee</a>
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/Section/Details/CSE/305/01/LEC/1178/91349">CSE305-01 (Fall 2017)</a>
+                                </td>
+
+                                <td>
+                                    PRINCIPLES OF DATABASE SYSTEMS
+                                </td>
+                                <td>
+
+
+                                    <a href="/Instructor/Details/ssmolka">Scott Smolka</a>
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/Section/Details/CSE/305/02/LEC/1178/97107">CSE305-02 (Fall 2017)</a>
+                                </td>
+
+                                <td>
+                                    PRINCIPLES OF DATABASE SYSTEMS
+                                </td>
+                                <td>
+
+
+                                    <a href="/Instructor/Details/ptripathi">Praveen Tripathi</a>
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/Section/Details/CSE/305/01/LEC/1184/51163">CSE305-01 (Spring 2018)</a>
+                                </td>
+
+                                <td>
+                                    PRINCIPLES OF DATABASE SYSTEMS
+                                </td>
+                                <td>
+
+
+                                    <a href="/Instructor/Details/ssmolka">Scott Smolka</a>
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/Section/Details/CSE/305/02/LEC/1184/55059">CSE305-02 (Spring 2018)</a>
+                                </td>
+
+                                <td>
+                                    PRINCIPLES OF DATABASE SYSTEMS
+                                </td>
+                                <td>
+
+
+                                    <a href="/Instructor/Details/ptripathi">Praveen Tripathi</a>
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/Section/Details/CSE/305/90/LEC/1184/56787">CSE305-90 (Spring 2018)</a>
+                                </td>
+
+                                <td>
+                                    PRINCIPLES OF DATABASE SYSTEMS
+                                </td>
+                                <td>
+
+
+                                    <a href="/Instructor/Details/arhlee">Arthur Lee</a>
+
+
+                                </td>
+                            </tr>
+
+                    </tbody>
+
+                </table>
+                </div>
+
+
+
+
+                <div class="pagination-container"><ul class="pagination"><li class="active"><a>1</a></li></ul></div>
+            </div>
+            </div>
+    </div>
+
+
+
+        <!--End role=main-->
+        <footer class="site-footer">
+            <div class="top-footer fluffy dark-footer">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-3">
+                            <div class="footer-nav">
+                                <strong>Course Catalog Tools</strong>
+                                <ul>
+                                    <li><a href="http://classie.stonybrook.edu/">Syllabi</a></li>
+                                    <li><a href="https://classie-evals.stonybrook.edu/">Evaluation Explorer</a></li>
+                                    <li><a href="https://it.stonybrook.edu/help/kb/removing-a-comment-from-an-evaluation">Comment Removal Policy </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-nav">
+                                <strong>Course Evaluations</strong>
+                                <ul>
+                                    <li><a href="https://it.stonybrook.edu/services/course-evaluations-faculty">For Faculty</a></li>
+                                    <li><a href="https://it.stonybrook.edu/services/course-evaluations-students">For Students</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-nav">
+                                <strong>Quick Links</strong>
+                                <ul>
+                                    <li><a href="http://www.stonybrook.edu/celt">CELT</a></li>
+                                    <li><a href="http://classfind.stonybrook.edu/">Class Find</a></li>
+                                    <li><a href="http://blackboard.stonybrook.edu/">Blackboard</a></li>
+                                    <li><a href="http://stonybrook.edu/solar">SOLAR</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="social-links">
+                                <h3>Connect with @SBUDoIT</h3>
+
+
+                                <a href="https://www.facebook.com/sbudoit" class="social-link social-link--facebook">
+                                    <span class="sr-only">Facebook</span>
+                                </a>
+
+                                <a href="https://twitter.com/sbudoit" class="social-link social-link--twitter">
+                                    <span class="sr-only">Twitter</span>
+                                </a>
+
+                                <a href="https://www.youtube.com/channel/UCbOzIblxmg-Ing9NSEms8Tw" class="social-link social-link--youtube">
+                                    <span class="sr-only">YouTube</span>
+                                </a>
+
+                                <a href="https://www.flickr.com/photos/101383158@N02/" class="social-link social-link--flickr">
+                                    <span class="sr-only">Flickr</span>
+                                </a>
+
+                                <a href="https://instagram.com/sbudoit" class="social-link social-link--instagram">
+                                    <span class="sr-only">Instagram</span>
+                                </a>
+
+                                <a href="https://www.yammer.com/stonybrook.edu/" class="social-link social-link--yammer">
+                                    <span class="sr-only">Yammer</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row cozy">
+                        <div class="col-sm-12">
+                            <p>
+                                Copyright © 2008-2016 Stony Brook University Division of Information Technology - All Rights Reserved<br>
+
+                                <br />
+                                Classie Evaluation Explorer - Version: 1.14.0.21
+                                <br />
+                                    Current User: ikleiman
+                                <br />
+
+                                Phone: (631) 632-9800 | <a href="https://service.stonybrook.edu">Submit Service Ticket</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+            <script src="/content/themes/unity-lab/js/footer/footer.dev.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>
